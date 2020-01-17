@@ -12,7 +12,7 @@ Methods: The majority of the work was manipulating the two datasets to associate
 
 We then needed perform feature selection, as there were 900+ error codes.  The event organizers gave us a tip at the opening ceremony: MU error codes associated with corrosive wires usually stopped occuring after the repair.  Thus we calculated the % decrease in error code frequency for all MU codes after a wiring corosion repair, ignoring codes that occured during the maintencance window (these codes usually occurred as technicians were trying to recreated the issue).  We decided to use the 20 MU codes with the largest % decrease post wire corrosion repair.  
 
-![Left: average % decrease in MU code frequency after wire corrosion repair; Right: average count decrease in MU code frequency after wire corrosion repair](https://github.com/colbyw5/HackTheMachine/blob/master/presentation/mu_freq.png)
+![Left: average % decrease in MU code frequency after wire corrosion repair; Right: frequency of MU code across all aircraft in test set](https://github.com/colbyw5/HackTheMachine/blob/master/presentation/mu_freq.png)
 
 Next we split the data: 35 aircrafts to train an algorithm, 10 to test.  We trained fours models: logistic regression with L2 normialization, SVM with linear kernel, RandomForest and XGBoost.  Under normal circumstances we would use cross-validation to gridsearch the proper hyperparameters.  However, due to the condensed timeline, we made a few adjustments to each model's hyperparameters and observed model performance, focusing on model accuracy.  Once we found the most accurate model (see results below), we re-trained the model on all 45 aircrafts and submitted our results to our team's GitLab repository for evaluation.
 
@@ -36,4 +36,4 @@ Directory Structure:
     - provided: This code was provided by event organizers to help attendees better understand the supplied data and sugest approaches to the challenges
     - archive: Previous code files no longer needed
 - presentation: Slides presented to event organizers and attendees at the event conclusion, in addition to model performance visualizations and tables.
-- event_info:
+- event_info: event details and code notebook providing some exploratory analyses

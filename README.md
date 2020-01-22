@@ -2,6 +2,8 @@
 
 **Background**:The HackTheMachine Data Science Challenge was help September 7-9 in Brooklyn, NY.  The event brought together data science professionals and students from a variety of backgrounds, including private industry, academia and governemnt, to tackle a pressing issue in the Navy: fleet availability.  In other words, F-18s are not useful to National Security if they are unable to fly.  Our team (Team Jumbos) split the first-place $20,000 prize fund.
 
+**Language**: Python 3.7.5
+
 ![](https://github.com/colbyw5/HackTheMachine/blob/master/event_info/Hack_NY_Vector_Final_LOGO.png)
 
 **Data**: The Navy provided 7+ years of Maintenance Action Form (MAF) dataset, which contains a record of maintenance actions performed on the aircraft. It is a record of everything maintainers have done to the aircraft including: routine inspections, part removal and replacement, mission-related changes, and unscheduled maintenance, including unforeseen failures. The Memory Unit (MU) dataset is provided as well. The MU data is a time-stamped record of all failures or anomalies automatically reported by the aircraft’s avionics system, similar to an error log your auto mechanic might download from your car when the check engine light comes on.

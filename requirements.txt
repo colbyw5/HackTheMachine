@@ -26,7 +26,7 @@ mkl-fft==1.0.15
 mkl-random==1.1.0
 mkl-service==2.4.0
 more-itertools==10.7.0
-nbconvert==7.16.6
+nbconvert==7.17.1
 nbformat==5.10.4
 notebook==7.4.5
 numpy==2.2.0
